@@ -104,10 +104,14 @@ print("-----------------------")
 num1 = int(input("Введите любое число: "))
 num2 = random.randint(1, 100)
 print(num2)
-if num1 <= num2:
-    print("Вы  ввели число =", num1, ", которое меньше/равно", num2)
+if num1 < num2:
+    print("Вы  ввели число =", num1, ", которое меньше", num2)
+elif num1 > num2:
+    print("Вы  ввели число =", num1, ", которое больше", num2)
+elif num1 == num2:
+    print("Вы  ввели число =", num1, ", которое равно", num2)
 else:
-    print(num1, " больше, чем ", num2)
+    print("Нет совпадений")
 
 #9
 ''' Сделать скрипт используя функцию input().
@@ -120,7 +124,23 @@ print("-----------------------")
 number1 = int(input("Введите любое число: "))
 number2 = random.randint(1, 100)
 number3 = random.randint(1, 100)
-if (number1 <= number2) and (number1 >= number3):
-    print("Вы  ввели число =", number1, ", которое меньше/равно", number2, " и которое больше/равно ", number3)
+if (number1 < number2) and (number1 > number3):
+    print("Вы  ввели число =", number1, ", которое меньше", number2, ", но больше ", number3)
+elif (number1 > number2) and (number1 < number3):
+    print("Вы  ввели число =", number1, ", которое больше", number2, ", но меньше ", number3)
+elif (number1 == number2) and (number1 == number3):
+    print("Вы  ввели число =", number1, ", которое равно", number2, " и ", number3)
+elif (number1 < number2) and (number1 < number3):
+    print("Вы  ввели число =", number1, ", которое меньше", number2, " и ", number3)
+elif (number1 > number2) and (number1 > number3):
+    print("Вы  ввели число =", number1, ", которое больше", number2, " и ", number3)
+elif (number1 == number2) and (number1 < number3):
+    print("Вы  ввели число =", number1, ", которое равно", number2, ", но меньше ", number3)
+elif (number1 > number2) and (number1 == number3):
+    print("Вы  ввели число =", number1, ", которое больше", number2, ", но равно ", number3)
+elif (number1 < number2) and (number1 == number3):
+    print("Вы  ввели число =", number1, ", которое меньше", number2, ", но равно ", number3)
+elif (number1 == number2) and (number1 > number3):
+    print("Вы  ввели число =", number1, ", которое равно", number2, ", но больше ", number3)
 else:
     print("нет совпадений")
