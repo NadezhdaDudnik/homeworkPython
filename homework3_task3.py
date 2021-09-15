@@ -1,6 +1,5 @@
 # №3 task
 def main():
-    # try:
     input_money = get_money()
     usd_money = exchange_usd(input_money)
     eur_money = exchange_eur(input_money)
@@ -12,6 +11,7 @@ def main():
     print("Converted amount of CHF-money = ", chf_money, "CHF")
     print("Converted amount of GBP-money = ", gbp_money, "GBP")
     print("Converted amount of CNY-money = ", cny_money, "CNY")
+
 
 def get_money():
     input_data = int(input("Enter value of currency RUB "))
@@ -54,5 +54,6 @@ def exchange_gbp(money):
 def exchange_cny(money):
     int_money_cny = int(money) / 11.32
     return int_money_cny
+
 
 main()
