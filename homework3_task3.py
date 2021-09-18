@@ -47,7 +47,6 @@ def exchange_chf(money):
 
 def exchange_gbp(money):
     int_money_gbp = int(money) / 100.71
-    int_money_cny = int(money) / 11.32
     return int_money_gbp
 
 
