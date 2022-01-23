@@ -1,3 +1,5 @@
+
+
 def get_summa():
     summa = int(input("Enter value of summa "))
     if summa < 0:

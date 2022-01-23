@@ -33,8 +33,12 @@ def main():
                 cny_money = exchange_cny(input_summa)
                 print("You enter summa ", input_summa, " and ", "currency ", input_currency,
                       ", Converted amount of EUR-money = ", cny_money, "CNY")
+            else:
+                print("conversion is not possible \n")
         # When you are finished interacting with the interpreter, you can exit a REPL session in several ways: macOS,
         # type Command + D
+        except ValueError as errorvalue:
+            print(errorvalue)
         except EOFError as error:
             print(error)
             break
